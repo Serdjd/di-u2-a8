@@ -6,8 +6,12 @@ export default function TrafficLight() {
 
   function handleClick() {
     setWalk(!walk);
+    alerta()
   }
 
+  function alerta() {
+    alert(walk ? 'Parar es lo siguiente' : 'Caminar es lo siguiente')
+  }
   return (
     <>
       <button onClick={handleClick}>
